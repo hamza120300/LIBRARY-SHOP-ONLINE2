@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowingActivity">
+
+    <ImageView
+        android:id="@+id/BorrowingActivity_ImageView_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/BorrowingActivity_TextView_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:hint="@string/bookName"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_ImageView_Image" />
+
+    <TextView
+        android:id="@+id/BorrowingActivity_TextView_About"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:hint="@string/bookAbout"
+        android:gravity=""
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_TextView_Name" />
+
+
+    <TextView
+        android:id="@+id/BorrowingActivity_TextView_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/price"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_TextView_About" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NumOfDays"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BorrowingActivity_NumberPicker_NumOfBorrowing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BorrowingActivity_NumberPicker_NumOfBorrowing" />
+
+    <NumberPicker
+        android:id="@+id/BorrowingActivity_NumberPicker_NumOfBorrowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_TextView_Price" />
+
+    <TextView
+        android:id="@+id/BorrowingActivity_TextView_TotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalPrice"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/BorrowingActivity_Button_Borrowing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_NumberPicker_NumOfBorrowing" />
+
+
+    <Button
+        android:id="@+id/BorrowingActivity_Button_Borrowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Borrowing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BorrowingActivity_NumberPicker_NumOfBorrowing" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

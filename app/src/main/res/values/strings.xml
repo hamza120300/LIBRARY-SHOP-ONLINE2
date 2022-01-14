@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">login</string>
+    <string name="newUser">I don\'t have account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="oldUser">I have account</string>
+    <string name="coins">"Coins: "</string>
+    <string name="welcome">"Welcome  "</string>
+    <string name="bookName">name</string>
+    <string name="bookAbout">About</string>
+    <string name="bookNumOfPages">Number of pages</string>
+    <string name="categoryName">category name</string>
+    <string name="publishHouse">publish house</string>
+    <string name="price">price</string>
+    <string name="versionNumber">Version number</string>
+    <string name="publishDate">Publish date</string>
+    <string name="upload">Upload</string>
+    <string name="view">View</string>
+    <string name="borrow">Borrow</string>
+    <string name="authorName">Author name</string>
+    <string name="Comment">Comment</string>
+    <string name="addComment">Add comment</string>
+    <string name="NumOfDays">number of borrowing days: </string>
+    <string name="Borrowing">Borrowing</string>
+    <string name="totalPrice">Total price: </string>
+    <string name="MyUploadBook">My upload books</string>
+    <string name="MyBorrowBook">My borrow books</string>
+</resources>

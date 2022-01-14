@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookInfo"
+
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/bookName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_AuthorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/authorName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_Price" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_About"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/bookAbout"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_Name" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_NumOfPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/bookNumOfPages"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_About" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_CategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/categoryName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_About" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_PublishHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/publishHouse"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_NumOfPages" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_PublishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="@string/publishDate"
+        app:layout_constraintBottom_toBottomOf="@+id/BookInfo_EditText_PublishHouse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_CategoryName" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_PublishHouse" />
+
+    <EditText
+        android:id="@+id/BookInfo_EditText_VersionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/versionNumber"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_PublishHouse" />
+
+    <Button
+        android:id="@+id/BookInfo_Button_Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookInfo_EditText_AuthorName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
